@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFix Repair Services</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>TechFix Repair Services</h1>
+            <p>Device Repair Request Form</p>
+        </header>
+
+        <form>
+
+            <table>
+                <tr>
+                    <th>Customer ID</th>
+                    <td>
+                        <input type="text" name="customer_id" placeholder="e.g. C-1001" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Customer Name</th>
+                    <td>
+                        <input type="text" name="customer_name" placeholder="Enter your full name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Email Address</th>
+                    <td>
+                        <input type="email" name="email" placeholder="example@email.com" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Contact Number</th>
+                    <td>
+                        <input type="tel" name="contact" placeholder="09XXXXXXXXX" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Device Type</th>
+                    <td>
+                        <select name="device_type" required>
+                            <option value="">-- Select Device --</option>
+                            <option value="laptop">Laptop</option>
+                            <option value="desktop">Desktop Computer</option>
+                            <option value="smartphone">Smartphone</option>
+                            <option value="tablet">Tablet</option>
+                            <option value="printer">Printer</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Preferred Service</th>
+                    <td>
+                        <select name="service" required>
+                            <option value="">-- Select Service --</option>
+                            <option value="diagnostic">Device Diagnostic</option>
+                            <option value="hardware">Hardware Repair</option>
+                            <option value="software">Software Installation</option>
+                            <option value="screen">Screen Replacement</option>
+                            <option value="cleaning">Device Cleaning</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Service Priority</th>
+                    <td>
+                        <label>
+                            <input type="radio" name="priority" value="standard" checked>
+                            Standard
+                        </label>
+
+                        <label>
+                            <input type="radio" name="priority" value="urgent">
+                            Urgent
+                        </label>
+
+                        <label>
+                            <input type="radio" name="priority" value="emergency">
+                            Emergency
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Additional Services</th>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="additional" value="backup">
+                            Data Backup
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="additional" value="cleaning">
+                            Deep Cleaning
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="additional" value="installation">
+                            Software Installation
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Preferred Date</th>
+                    <td>
+                        <input type="date" name="preferred_date" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Problem Description</th>
+                    <td>
+                        <textarea
+                            name="problem"
+                            rows="6"
+                            placeholder="Describe the problem with your device..."
+                            required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Actions</th>
+                    <td class="buttons">
+                        <button type="submit">Submit Request</button>
+                        <button type="reset" class="reset-btn">Reset Form</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+        <footer>
+            <p>&copy; 2026 TechFix Repair Services</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
