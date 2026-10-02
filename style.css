@@ -1,0 +1,170 @@
+/* General Page Style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef3f7;
+    color: #263238;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #1769aa;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Form Area */
+form {
+    padding: 25px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #d5dce1;
+    padding: 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    width: 30%;
+    background-color: #f1f6fa;
+    color: #1769aa;
+}
+
+tr:nth-child(even) td {
+    background-color: #fafcfd;
+}
+
+/* Form Controls */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b9c5cc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1769aa;
+    box-shadow: 0 0 4px rgba(23, 105, 170, 0.25);
+}
+
+/* Radio Buttons and Checkboxes */
+label {
+    margin-right: 15px;
+    line-height: 2;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #1769aa;
+    margin-right: 5px;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1769aa;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #0d4f82;
+}
+
+.reset-btn {
+    background-color: #757575;
+}
+
+.reset-btn:hover {
+    background-color: #555555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f1f6fa;
+    color: #66727a;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    th,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        border-bottom: none;
+    }
+
+    button {
+        margin-bottom: 8px;
+    }
+}
